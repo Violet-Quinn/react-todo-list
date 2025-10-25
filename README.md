@@ -1,16 +1,51 @@
-# React + Vite
+# React + Vite Todo List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple **Todo List** application built with **React** and **Vite**. It allows users to:
 
-Currently, two official plugins are available:
+- **Add** new todo tasks  
+- **Edit** existing tasks  
+- **Delete** tasks  
+- Persist tasks using **localStorage**, so they remain even after refreshing the page  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Minimal and fast setup using **Vite** for development with Hot Module Replacement (HMR)  
+- Functional React components with **hooks** (`useState` and `useEffect`)  
+- Persistent storage with **localStorage**  
+- Clean and maintainable code structure  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation
 
-## Expanding the ESLint configuration
+Clone the repository:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone <your-repo-url>
+cd <your-project-folder>
+npm install
+```
+
+Start the development server:
+```bash
+npm run dev
+```
+
+Open your browser and navigate to the provided URL to see Todo List in action.
+
+## Folder Structure
+```bash
+src/
+├── components/
+│   ├── TodoInput.jsx      # Component to add new todos
+│   ├── TodoList.jsx       # Component to display all todos
+│   └── TodoCard.jsx       # Single todo item with edit & delete
+├── App.jsx
+└── main.jsx
+```
+
+## Usage
+
+1. Add a task: Type a task in the input field and press "Add".
+2. Edit a task: Click the edit icon on a task, modify the text, and save it.
+3. Delete a task: Click the delete icon on a task to remove it.
+
+Persistence: All tasks are stored in localStorage, so they remain after refreshing the page.
