@@ -1,5 +1,7 @@
 # React + Vite Todo List Application
 
+Deployed here: [https://reactjs-todo-list-crud.netlify.app/](https://reactjs-todo-list-crud.netlify.app/)
+
 This is a simple **Todo List** application built with **React** and **Vite**. It allows users to:
 
 - **Add** new todo tasks  
