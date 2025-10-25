@@ -32,14 +32,21 @@ npm run dev
 Open your browser and navigate to the provided URL to see Todo List in action.
 
 ## Folder Structure
-```bash
-src/
-├── components/
-│   ├── TodoInput.jsx      # Component to add new todos
-│   ├── TodoList.jsx       # Component to display all todos
-│   └── TodoCard.jsx       # Single todo item with edit & delete
-├── App.jsx
-└── main.jsx
+```
+.
+├── index.html
+├── package.json
+├── vite.config.js
+├── src/
+│   ├── main.jsx        # app entry + ReactDOM render
+│   ├── App.jsx         # main App component
+│   ├── index.css       # global styles
+│   ├── assets/         # images/static assets
+│   └── components/
+│       ├── TodoInput.jsx
+│       ├── TodoList.jsx
+│       └── TodoCard.jsx
+└── public/
 ```
 
 ## Usage
